@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 type square struct {
 	large float64
@@ -16,7 +19,7 @@ func (s square) area() float64 {
 }
 
 func (s circle) area() float64 {
-	return 3.141516 * s.radius * s.radius
+	return math.Pi * s.radius * s.radius
 }
 
 type shape interface {
