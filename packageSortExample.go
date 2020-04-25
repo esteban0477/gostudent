@@ -34,7 +34,8 @@ type Interface interface {
 }
 
 func Sort(data Interface)
-Sort sorts data. It makes one call to data.Len to determine n, and O(n*log(n)) calls to data.Less and data.Swap. The sort is not guaranteed to be stable.
+Sort sorts data. It makes one call to data.Len to determine n, and O(n*log(n)) calls to
+data.Less and data.Swap. The sort is not guaranteed to be stable.
 
 */
 
